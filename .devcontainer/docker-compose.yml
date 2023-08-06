@@ -5,3 +5,5 @@ services:
     build:
       context: .
     tty: true
+    volumes:
+      - ../:/home/vscode/workspace
