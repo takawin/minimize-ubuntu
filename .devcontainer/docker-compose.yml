@@ -7,3 +7,14 @@ services:
     tty: true
     volumes:
       - ../:/home/vscode/workspace
+  db:
+    image: postgres:14
+    ports:
+      - 16131:5432
+    volumes:
+      - db_store:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=bumpofchicken
+
+volumes:
+  db_store:
