@@ -2,5 +2,14 @@
     "dockerComposeFile": ["docker-compose.yml"],
     "service": "workspace", // docker-compose.ymlファイル内のserviceのどれかを指定する
     "workspaceFolder": "/home/vscode/workspace", // コンテナに入ったときのpwdとなる
-    "remoteUser": "vscode" // 指定しないとrootユーザーになる
+	"remoteUser": "vscode", // 指定しないとrootユーザーになる
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"vscjava.vscode-gradle",
+				"vscjava.vscode-java-pack",
+				"vscjava.vscode-spring-initializr"
+			]
+		}
+	} 
 }
